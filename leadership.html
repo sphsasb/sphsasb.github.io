@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SPHS ASB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="leadershipstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+        <link rel="icon" href="tigerlogo.png">
+
+        <style>
+            .container {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            a.social {
+                display: inline-block;
+                color: black;
+                text-decoration: none;
+                margin: 15px 4px;
+                position: relative;
+                -webkit-transition-duration: 0.4s; 
+                -moz-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+            }
+
+            a:hover.social {
+                color: gray;
+                opacity: 0.9;
+                text-shadow: 2px 3px 5px orange;
+                top: -3px;
+            }
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.9);
+                overflow-x: hidden;
+                transition: 0.5s;
+            }
+
+            .overlay-content {
+                position: relative;
+                top: 20%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .overlay a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 36px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+            }
+
+            .overlay .closebtn {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+            }
+
+            @media screen and (max-height: 450px) {
+                .overlay a {font-size: 20px}
+                .overlay .closebtn {
+                    font-size: 40px;
+                    top: 15px;
+                    right: 35px;
+                }
+            }
+            #navmenu {
+                color: orange;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="leadership.html">Leadership</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="info.html">Helpful Info</a>
+                <a href="bank.html">Student Bank</a>
+                <a href="links.html">Links</a>
+            </div>
+        </div>
+
+        <span class="navmenu" style="font-size:50px;cursor:pointer;color:orange;margin-left:15px;position:relative;z-index: 1;" onclick="openNav()">&#9776;</span>
+        <h1>LEADERSHIP 2017-2018</h1>
+        <table width="100%">
+            <tr>
+                <td>
+                    <div class="leadership">
+                        <div class="left">
+                            <h2 class="categories">COMMISSIONERS</h2>
+                            <h4><span class="position">General - </span>Nicole Srisutham</h4>
+                            <h4><span class="position">Internal Affairs - </span>Jae Jin Lee</h4>
+                            <h4><span class="position">Correspondence - </span>Caleb Waters</h4>
+                            <h4><span class="position">Finance - </span>Scott Na</h4>
+                            <h4><span class="position">Academics - </span>Kate Ba</h4>
+                            <h4><span class="position">Activities - </span>Lauren Sharkey</h4>
+                            <h4><span class="position">Assemblies - </span>Anders Keith</h4>
+                            <h4><span class="position">Athletics - </span>Tiffany Holmes</h4>
+                            <h4><span class="position">Clubs - </span>Kenny Ryu</h4>
+                            <h4><span class="position">Noontime - </span>Adam Fagenson</h4>
+                            <h4><span class="position">Publicity - </span>Christy Yu</h4>
+                            <h4><span class="position">School and Community - </span>Ben Elbaum</h4>
+                            <h4><span class="position">Spirit - </span>Hannah Lee</h4>
+                            <h2 class="categories">MISC. COORDINATORS</h2>
+                            <h4><span class="position">Videographer - </span>Max Cheng</h4>
+                            <h4><span class="position">Web Coordinator - </span>Phoebe Kim</h4>
+                            <h4><span class="position">CASC - </span>Hyun Kim</h4>
+                            <h4><span class="position">CASC - </span>Rachel Lu</h4>
+                        </div>
+                        <div class="right">
+                            <h2 class="categories">CLASS OFFICERS</h2>
+                            <h3 class="position">Seniors</h3>
+                            <h4><span class="position">President - </span>Young Song</h4>
+                            <h4><span class="position">Vice President - </span>Nick Song</h4>
+                            <h4><span class="position">Secretary - </span>Jasper Lee</h4>
+                            <h4><span class="position">Treasurer - </span>Kyle Woo</h4>
+                            <h3 class="position">Juniors</h3>
+                            <h4><span class="position">President - </span>Abbie Lukavsky</h4>
+                            <h4><span class="position">Vice President - </span>Akash Rathi</h4>
+                            <h4><span class="position">Secretary - </span>Sage Pierone</h4>
+                            <h4><span class="position">Treasurer - </span>Jazzy Serrano</h4>
+                            <h3 class="position">Sophomores</h3>
+                            <h4><span class="position">President - </span>Hanwul Choi</h4>
+                            <h4><span class="position">Vice President - </span>Matthew Iwane</h4>
+                            <h4><span class="position">Secretary - </span>Jewel Nguyen</h4>
+                            <h4><span class="position">Treasurer - </span>Joseph Lee</h4>
+                            <h3 class="position">Freshmen</h3>
+                            <h4><span class="position">President - </span>Andrew Cheung</h4>
+                            <h4><span class="position">Vice President - </span>Michelle Jee</h4>
+                            <h4><span class="position">Secretary - </span>Katie Hohman</h4>
+                            <h4><span class="position">Treasurer - </span>Oliver Lee</h4>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="astext" data-toggle="collapse" data-target="#1617">LEADERSHIP 2016-2017</button>
+                    <div id="1617" class="collapse">
+                        <div class="leadership">
+                            <div class="left">
+                                <h2 class="categories">COMMISSIONERS</h2>
+                                <h4><span class="position">General - </span>Sophia Lopez</h4>
+                                <h4><span class="position">Internal Affairs - </span>Anthony Chen</h4>
+                                <h4><span class="position">Correspondence - </span>Vanessa Chai</h4>
+                                <h4><span class="position">Finance - </span>Janice Park</h4>
+                                <h4><span class="position">Academics - </span>Kendrick Shen</h4>
+                                <h4><span class="position">Activities - </span>Taylor Holmes</h4>
+                                <h4><span class="position">Assemblies - </span>Charlotte Emerson</h4>
+                                <h4><span class="position">Athletics - </span>Jalynne Li</h4>
+                                <h4><span class="position">Clubs - </span>Danielle Lee</h4>
+                                <h4><span class="position">Noontime - </span>Brian Kojima</h4>
+                                <h4><span class="position">Publicity - </span>Perah Ralin</h4>
+                                <h4><span class="position">School and Community - </span>Tei Park</h4>
+                                <h4><span class="position">Spirit - </span>Monica Lin</h4>
+                                <h2 class="categories">MISC. COORDINATORS</h2>
+                                <h4><span class="position">Videographer - </span>Nick Michael</h4>
+                                <h4><span class="position">Web Coordinator - </span>Mani Roshandel</h4>
+                                <h4><span class="position">CASC - </span>Maya Roshandel</h4>
+                                <h4><span class="position">CASC - </span>Olivia Nouriani</h4>
+                            </div>
+                            <div class="right">
+                                <h2 class="categories">CLASS OFFICERS</h2>
+                                <h3 class="position">Seniors</h3>
+                                <h4><span class="position">President - </span>Katherine Conte</h4>
+                                <h4><span class="position">Vice President - </span>Anissa Santos</h4>
+                                <h4><span class="position">Secretary - </span>Robert Decker</h4>
+                                <h4><span class="position">Treasurer - </span>Sophia Gerodiaz</h4>
+                                <h3 class="position">Juniors</h3>
+                                <h4><span class="position">President - </span>Brandon Zhu</h4>
+                                <h4><span class="position">Vice President - </span>Christy Yu</h4>
+                                <h4><span class="position">Secretary - </span>Nicole Srisutham</h4>
+                                <h4><span class="position">Treasurer - </span>Scott Na</h4>
+                                <h3 class="position">Sophomores</h3>
+                                <h4><span class="position">President - </span>Jessica Lopez</h4>
+                                <h4><span class="position">Vice President - </span>Lauren Kafkaloff</h4>
+                                <h4><span class="position">Secretary - </span>Caleb Waters</h4>
+                                <h4><span class="position">Treasurer - </span>Jonathan Zhu</h4>
+                                <h3 class="position">Freshmen</h3>
+                                <h4><span class="position">President - </span>Hanwul Choi</h4>
+                                <h4><span class="position">Vice President - </span>Hyun Kim</h4>
+                                <h4><span class="position">Secretary - </span>Jewel Nguyen</h4>
+                                <h4><span class="position">Treasurer - </span>Matthew Iwane</h4>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="astext" data-toggle="collapse" data-target="#1516">LEADERSHIP 2015-2016</button>
+                    <div id="1516" class="collapse">
+                        <div class="leadership">
+                            <div class="left">
+                                <h2 class="categories">COMMISSIONERS</h2>
+                                <h4><span class="position">General - </span>Christina Valdivia</h4>
+                                <h4><span class="position">Internal Affairs - </span>Kristen Kafkaloff</h4>
+                                <h4><span class="position">Correspondence - </span>Emmett Jang</h4>
+                                <h4><span class="position">Finance - </span>Arian Nazarian</h4>
+                                <h4><span class="position">Academics - </span>James Song</h4>
+                                <h4><span class="position">Activities - </span>Olivia Chu</h4>
+                                <h4><span class="position">Assemblies - </span>Matthew Shultz</h4>
+                                <h4><span class="position">Athletics - </span>Alexis Mora</h4>
+                                <h4><span class="position">Clubs - </span>Cameron Waters</h4>
+                                <h4><span class="position">Noontime - </span>Ian Geiberger</h4>
+                                <h4><span class="position">Publicity - </span>Katerina Levandis</h4>
+                                <h4><span class="position">School and Community - </span>Sheridan Nansen</h4>
+                                <h4><span class="position">Spirit - </span>Gabby Marquez</h4>
+                                <h2 class="categories">MISC. COORDINATORS</h2>
+                                <h4><span class="position">Videographer - </span>Jaydon Krooss</h4>
+                                <h4><span class="position">Web Coordinator - </span>Emily Gin</h4>
+                            </div>
+                            <div class="right">
+                                <h2 class="categories">CLASS OFFICERS</h2>
+                                <h3 class="position">Seniors</h3>
+                                <h4><span class="position">President - </span>Amador Lagunas</h4>
+                                <h4><span class="position">Vice President - </span>Mi Jin Kim</h4>
+                                <h4><span class="position">Secretary - </span>Lauren Richards</h4>
+                                <h4><span class="position">Treasurer - </span>Jessica Tse</h4>
+                                <h3 class="position">Juniors</h3>
+                                <h4><span class="position">President - </span>Olivia Nouriani</h4>
+                                <h4><span class="position">Vice President - </span>Tei Park</h4>
+                                <h4><span class="position">Secretary - </span>Shelby Lee</h4>
+                                <h4><span class="position">Treasurer - </span>Janice Park</h4>
+                                <h3 class="position">Sophomores</h3>
+                                <h4><span class="position">President - </span>Jae Jin Lee</h4>
+                                <h4><span class="position">Vice President - </span>Nick Song</h4>
+                                <h4><span class="position">Secretary - </span>Brandon Zhu</h4>
+                                <h4><span class="position">Treasurer - </span>Lauren Sharkey</h4>
+                                <h3 class="position">Freshmen</h3>
+                                <h4><span class="position">President - </span>Lily Azat</h4>
+                                <h4><span class="position">Vice President - </span>Sofie Dreskin</h4>
+                                <h4><span class="position">Secretary - </span>Caleb Waters</h4>
+                                <h4><span class="position">Treasurer - </span>Jonathan Zhu</h4>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container" id="socialmediabuttons">
+                        <a class="social" href="https://www.facebook.com/SPHS-ASB-1527515884146656/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+                        <a class="social" href="https://www.instagram.com/sphsasb/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+                        <a class="social" href="https://www.snapchat.com/add/sphsasb" target="_blank"><i class="fa fa-snapchat fa-3x"></i></a>
+                        <a class="social" href="https://www.youtube.com/channel/UCxem7OER1ZzuR0x0uBUWqvA" target="_blank"><i class="fa fa-youtube fa-3x"></i></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </body>
+</html>
+
+

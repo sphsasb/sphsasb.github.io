@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SPHS ASB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="clubstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+        <link rel="icon" href="tigerlogo.png">
+
+        <style>
+            .container {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            a.social {
+                display: inline-block;
+                color: black;
+                text-decoration: none;
+                margin: 15px 4px;
+                position: relative;
+                -webkit-transition-duration: 0.4s; 
+                -moz-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+            }
+
+            a:hover.social {
+                color: gray;
+                opacity: 0.9;
+                text-shadow: 2px 3px 5px orange;
+                top: -3px;
+            }
+
+
+
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.9);
+                overflow-x: hidden;
+                transition: 0.5s;
+            }
+
+            .overlay-content {
+                position: relative;
+                top: 20%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .overlay a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 36px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+            }
+
+            .overlay .closebtn {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+            }
+
+            @media screen and (max-height: 450px) {
+                .overlay a {font-size: 20px}
+                .overlay .closebtn {
+                    font-size: 40px;
+                    top: 15px;
+                    right: 35px;
+                }
+            }
+            #navmenu {
+                color: orange;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="leadership.html">Leadership</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="info.html">Helpful Info</a>
+                <a href="bank.html">Student Bank</a>
+                <a href="links.html">Links</a>
+            </div>
+        </div>
+
+        <span class="navmenu" style="font-size:50px;cursor:pointer;color:orange;margin-left:15px;position:relative;z-index: 1;" onclick="openNav()">&#9776;</span>
+        <h1>CLUBS</h1>
+        <h4>Join a club or start your own to bring the school community together and find others with similar interests!!</h4>
+        <h4>If you are interested in forming a club, everything you need to know is on this page below.</h4>
+        <h4>Please contact the Commissioner of Clubs, Kenny Ryu if you have any questions or concerns.</h4>
+        <h3>Club Rush: September 14th and 15th</h3>
+        <h3 style="color:orange">Club Reinstatement:</h3>
+        <h4>Fill out Club Reinstatement Form</h4>
+        <h4>Create budget (General Ledger report in student bank)</h4>
+        <h4>Create tentative activities list</h4>
+        <h4>Sign poster making rules</h4>
+        <h3 style="color: orange">New Club Application: </h3>
+        <h4>Fill out New Club Application</h4>
+        <p>New Club Charter</p>
+        <p>Club Constitution</p>
+        <p>Petition</p>
+        <h4>Create budget</h4>
+        <h4>Create tentative activities list</h4>
+        <h4>Sign poster making rules</h4>
+        <h3>Applications Deadline: August 31st</h3>
+        <h3><a class="doc" href="https://docs.google.com/document/d/1cqyGujkP8nN4tiET6F7JTvjzTRk_eooV1DKLr-R45ho/edit" target="_blank">Club Reinstatement Form</a></h3>
+        <h3><a class="doc" href="https://docs.google.com/document/d/12GRKOoV4wXmrwHr8i_jZY-ZdhtHQRY4ixPAvJgfvW2M/edit?usp=sharing" target="_blank">New Club Application</a></h3>
+        <h3><a class="doc" href="https://docs.google.com/document/d/1gOqOnAwesNpTYrHqdUYq1dXakgmWB4BqCtyL_1zfOZ4/edit?usp=sharing" target="_blank">Poster Making Rules</a></h3>
+        <h3><a class="doc" href="https://docs.google.com/document/d/1-DBucjqQDWibxCCt34UPLiArLIQ8eFkhSoYonck6eNE/edit?usp=sharing" target="_blank">Club Budget Example</a></h3>
+        <h3><a class="doc" href="https://docs.google.com/document/d/1TKsaDFsBuP_zZCD98NqMoHhPoV2uqCqyLfUa7wyOSn0/edit?usp=sharing" target="_blank">Tentative Activities Example</a></h3>
+        <div class="container" id="socialmediabuttons">
+            <a class="social" href="https://www.facebook.com/SPHS-ASB-1527515884146656/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+            <a class="social" href="https://www.instagram.com/sphsasb/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+            <a class="social" href="https://www.snapchat.com/add/sphsasb" target="_blank"><i class="fa fa-snapchat fa-3x"></i></a>
+            <a class="social" href="https://www.youtube.com/channel/UCxem7OER1ZzuR0x0uBUWqvA" target="_blank"><i class="fa fa-youtube fa-3x"></i></a>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </body>
+</html>
+
+

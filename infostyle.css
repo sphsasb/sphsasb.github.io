@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font: 400 15px/1.8 "Lato", sans-serif;
+
+}
+p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+#tabone, #tabtwo, #tabthree, #tabfour, #tabfive {
+    width: 20%;
+    float: left;
+    font-size: 20px;
+    align-content: center;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+.astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:10px;
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+}
+button {
+    width: 100%
+}
+button:focus, input[type="button"]:focus {
+    outline: none;
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+}

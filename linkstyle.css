@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font: 400 15px/1.8 "Lato", sans-serif;
+
+}
+p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+a:link.link {
+    color: orange;
+}
+a:visited.link {
+    color: orange;
+}
+a:hover.link {
+    color: darkorange;
+}
+a:active.link {
+    color: black;
+}
+.astext {
+    background:none;
+    border:none;
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+}
+button {
+    width: 100%;
+}
+a:link.link2 {
+    color: black;
+}
+a:visited.link2 {
+    color: black;
+}
+a:hover.link2 {
+    color: gray;
+}
+a:active.link2 {
+    color: orange;
+}

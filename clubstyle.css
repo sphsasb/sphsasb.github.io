@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font: 400 15px/1.8 "Lato", sans-serif;
+
+}
+p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+#tabone, #tabtwo, #tabthree, #tabfour, #tabfive {
+    width: 20%;
+    float: left;
+    font-size: 20px;
+    align-content: center;
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+a:link.doc {
+    color: orange;
+}
+a:visited.doc {
+    color: orange;
+}
+a:hover.doc {
+    color: darkorange;
+}
+a:active.doc {
+    color: black;
+}

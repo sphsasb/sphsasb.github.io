@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font: 400 15px/1.8 "Lato", sans-serif;
+
+}
+.left, .right {
+    width: 50%;
+    float: left;
+    align-content: center;
+}
+.leadership {
+    height: inherit;
+}
+.position {
+    color: orange;
+    text-align: center;
+}
+h2.categories {
+    color: orange;
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+#tabone, #tabtwo, #tabthree, #tabfour, #tabfive {
+    width: 20%;
+    float: left;
+    align-content: center;
+}
+h1 {
+    text-align: center;
+}
+@media(max-width:300px) {
+    h2.categories {
+        font-size: 16px;
+    }
+    h3.position {
+        font-size: 14px;
+    }
+    span.position {
+        font-size: 12px;
+    }
+}
+@media(max-width:490px) {
+    h2.categories {
+        font-size: 16px;
+    }
+    h3.position {
+        font-size: 14px;
+    }
+    span.position {
+        font-size: 12px;
+    }
+}
+@media(min-width:491px) {
+    h2.categories {
+        font-size: 18px;
+    }
+}
+
+@media(min-width:650px) {
+    h2.categories {
+        font-size: 30px;
+    }
+}
+
+@media(min-width:1000px) {
+    h2.categories {
+        font-size: 30px;
+    }
+}
+.astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:10px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.lead {
+    width: inherit;
+    align-content: center;
+}
+table, th, td {
+    text-align: center;
+}

@@ -1,0 +1,132 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+    background-image: url("https://imgur.com/aXBkFVm");
+    min-height: 100%;
+}
+.bgimg-2 {
+    background-image: url("https://imgur.com/NqXIimr");
+    min-height: 550px;
+}
+.bgimg-3 {
+    background-image: url("https://imgur.com/G9vFMLR");
+    min-height: 550px;
+}
+.bgimg-4 {
+    background-image: url("https://imgur.com/UC7RgdP");
+    min-height: 100%;
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: darkorange;
+}
+.event {
+    text-align: center;
+    padding: 15px;
+}
+.border:hover {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.border {
+    background-color: darkorange;
+    color: #fff;
+    padding: 18px;
+    font-size: 40px;
+    letter-spacing: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+    font-style : italic;
+}
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 30px "Lato", sans-serif;
+    color: #111;
+    text-align: center;
+}
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+        background-attachment: scroll;
+    }
+}
+p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+#tabone, #tabtwo, #tabthree, #tabfour, #tabfive {
+    width: 20%;
+    float: left;
+    align-content: center;
+}
+.sectiontitle {
+    font-size: 40px;
+    text-align: center;
+}
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+@media(max-width:300px) {
+    .calendardiv {
+        padding:5px 5px;
+    }
+    iframe {
+        height:133px; 
+    }
+}
+@media(min-width:301px) {
+    .calendardiv {
+        padding:30px 48px;
+    }
+    iframe {
+        height: 400px;
+    }
+}
+@media(min-width:490px) {
+    .calendardiv {
+        padding:30px 48px;
+    }
+    iframe {
+        height: 400px;
+    }
+}
+
+@media(min-width:650px) {
+    .calendardiv {
+        padding:30px 48px;
+    }
+    iframe {
+        height: 400px;
+    }
+}
+
+@media(min-width:1000px) {
+    .calendardiv {
+        padding:50px 80px;
+    }
+    iframe {
+        height: 500px;
+    }
+}

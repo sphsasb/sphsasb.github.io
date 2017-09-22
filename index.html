@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SPHS ASB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+        <link href="parallax.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://www.solodev.com/assets/parallax/jquery.localscroll-1.2.7-min.js"></script>
+        <script src="https://www.solodev.com/assets/parallax/jquery.parallax-1.1.3.js"></script>
+        <script src="https://www.solodev.com/assets/parallax/jquery.scrollTo-1.4.2-min.js"></script>
+        <script src="scrolling.js"></script>
+        <link rel="icon" href="https://imgur.com/z9QZYOC">
+
+        <style>            
+            .container {
+                position: absolute;
+                text-align: center;
+                bottom: 0;
+                width: 100%;
+            }
+
+            a.social {
+                display: inline-block;
+                color: black;
+                text-decoration: none;
+                margin: 15px 4px;
+                position: relative;
+                -webkit-transition-duration: 0.4s; 
+                -moz-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+            }
+
+            a:hover.social {
+                color: gray;
+                opacity: 0.9;
+                text-shadow: 2px 3px 5px orange;
+                top: -3px;
+            }
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.9);
+                overflow-x: hidden;
+                transition: 0.5s;
+            }
+            .overlay-content {
+                position: relative;
+                top: 20%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+            }
+            .overlay a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 36px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+            .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+            }
+            .overlay .closebtn {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+            }
+            @media screen and (max-height: 450px) {
+                .overlay a {font-size: 20px}
+                .overlay .closebtn {
+                    font-size: 40px;
+                    top: 15px;
+                    right: 35px;
+                }
+            }
+            #navmenu {
+                margin-left: 15px;
+                margin-top: 15px;
+                color: orange;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="myNav" class="overlay">
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="leadership.html">Leadership</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="info.html">Helpful Info</a>
+                <a href="bank.html">Student Bank</a>
+                <a href="links.html">Links</a>
+            </div>
+        </div>
+
+        <span class="navmenu" style="font-size:50px;cursor:pointer;color:orange;margin-left:15px;position:fixed;z-index: 1;" onclick="openNav()">&#9776;</span>
+
+        <div class="bgimg-1">
+            <div class="caption">
+                <span class="border">SPHS ASB</span>
+            </div>
+        </div>
+        <div class="navigation" style="color:#777; background-color:white; text-align:center; padding: 10px 80px; text-align:justify;">
+        </div>
+        <div class="bgimg-2">
+        </div>
+        <div style="position:relative;">
+            <div style="color:#ddd; background-color:#282E34; text-align:center; padding:10px 10px; text-align: justify;">
+                <h2 class="sectiontitle"><i>WHAT'S GOING ON?</i></h2>
+                <div class="event">
+                    <h3>CLUB FORMS DUE</h3>
+                    <h4>All club forms are due on August 31st in the Clubs Box in the SAC room!!</h4>
+                    <h4>See the "Clubs" tab for more info</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bgimg-3">
+        </div>
+        <div style="position:relative;">
+            <div class="calendardiv" style="color:#ddd; background-color:#282E34; text-align:center; text-align: justify;">
+                <h2 class="sectiontitle">Calendar</h2>
+                <div id="calendar">
+                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23282E34&amp;src=dkdv8eg12p0hklnilnp4p1g5qo%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FChicago" style="border-width:0" width="100%" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="bgimg-4">
+            <div class="caption">
+                <span class="border">HOME OF THE TIGERS</span>
+            </div>
+            <div class="container" id="socialmediabuttons" bas>
+                <a class="social" href="https://www.facebook.com/SPHS-ASB-1527515884146656/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+                <a class="social" href="https://www.instagram.com/sphsasb/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+                <a class="social" href="https://www.snapchat.com/add/sphsasb" target="_blank"><i class="fa fa-snapchat fa-3x"></i></a>
+                <a class="social" href="https://www.youtube.com/channel/UCxem7OER1ZzuR0x0uBUWqvA" target="_blank"><i class="fa fa-youtube fa-3x"></i></a>
+            </div>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </body>
+</html>
