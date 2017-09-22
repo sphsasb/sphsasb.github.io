@@ -13,19 +13,19 @@ body, html {
     background-size: cover;
 }
 .bgimg-1 {
-    background-image: url("https://imgur.com/aXBkFVm");
+    background-image: url("tigers.jpg");
     min-height: 100%;
 }
 .bgimg-2 {
-    background-image: url("https://imgur.com/NqXIimr");
+    background-image: url("colorday.JPG");
     min-height: 550px;
 }
 .bgimg-3 {
-    background-image: url("https://imgur.com/G9vFMLR");
+    background-image: url("sphsasbdance.jpg");
     min-height: 550px;
 }
 .bgimg-4 {
-    background-image: url("https://imgur.com/UC7RgdP");
+    background-image: url("sphsgirlsbasketball.JPG");
     min-height: 100%;
 }
 
@@ -53,8 +53,8 @@ body, html {
     letter-spacing: 10px;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    font-family: Helvetica, Arial, sans-serif; 
-    font-weight: bold; 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
     font-style : italic;
 }
 h3 {
@@ -93,7 +93,7 @@ iframe {
         padding:5px 5px;
     }
     iframe {
-        height:133px; 
+        height:133px;
     }
 }
 @media(min-width:301px) {
