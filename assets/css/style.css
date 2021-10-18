@@ -8,6 +8,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+center{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  align-items: space-around;
+}
+
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
