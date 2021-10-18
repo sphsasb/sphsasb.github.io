@@ -13,7 +13,7 @@ div.gallery {
   border: 1px solid #FF5F15;
   float: left;
   width: 180px;
-  text-align: center;
+  justify-content: center;
 }
 
 div.gallery:hover {
