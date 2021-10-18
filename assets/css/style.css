@@ -10,19 +10,18 @@
 --------------------------------------------------------------*/
 div.gallery {
   margin: 5px;
-  border: 1px solid #FF5F15;
+  border: 1px solid #ccc;
+  float: left;
   width: 180px;
-  justify-content: center;
 }
 
 div.gallery:hover {
-  border: 3px solid #FF5F15;
+  border: 1px solid #777;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
-  justify-content: center;
 }
 
 div.desc {
